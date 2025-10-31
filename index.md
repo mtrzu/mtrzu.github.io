@@ -25,7 +25,7 @@ The first visualization is a bar chart displaying the number of Bigfoot Sighting
 
 This visualization is static, so it cannot be interacted with. 
 
-{% include_relative chart2.html %}
+{% include_relative chart1.html %}
 
 ## Visualization 2: Sightings by State 
 **Description:**
