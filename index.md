@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Bigfoot Sightings Visualization"
+tools: [Python, Altair, Vega-Lite]
 ---
 
 # Bigfoot Sightings Analysis
@@ -23,7 +24,8 @@ The first visualization is a bar chart displaying the number of Bigfoot Sighting
 -The color was encoded as quantitative, and the color scheme was “oranges”, further visualizing the years that had more sightings. By making the years with a greater number of sightings darker, it can enhance the contrast and show patterns in the years. By using a color scheme with a single color it also allows individuals with color blindness or other visual impairments understand the pattern using the contrast of the colors, rather than the colors themselves, ensuring the chart is accessible. 
 
 This visualization is static, so it cannot be interacted with. 
-{% include_relative by_year.html %}
+
+{% include_relative chart2.html %}
 
 ## Visualization 2: Sightings by State 
 **Description:**
@@ -39,7 +41,7 @@ The second visualization is a bar chart showing the total number of Bigfoot sigh
 -The color is also quantitative, and has a sequential blue color scale for a similar reason as the first chart: to show the magnitude of the sightings and make the contrast easier to visually compare them. From this choice, it is easily understood that Washington has far more sightings than any other state even without looking at the actual number of reports. 
 
 -The data was aggregated by state, and this chart is static, and not interactable. The horizontal orientation, compared to vertical, makes it easier to read the states and make the chart overall easier to read and understand. 
-{% include_relative by_state.html %}
+{% include_relative chart2.html %}
 
 ## Visualization 3: Yearly Sightings by State (Interactive)  
 **Description:**
@@ -57,7 +59,7 @@ The third visualization is an interactive line chart showing how Bigfoot sightin
 **Interactivity:**
 
 The chart is interactive using the dropdown menu, interactive sizing option,and the tooltip. The dropdown menu allows for a user to choose which state they want to look into with more detail. The .interactive() feature makes it easy to adjust the size of the line chart for visibility and exploratory purposes. The tooltip allows for a user to hover over a particular point, which will display the state, year and count, making it even easier to see. 
-{% include_relative inter.html %}
+{% include_relative chart3.html %}
 
 ### Data & Analysis  
 [The Data](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv)  
